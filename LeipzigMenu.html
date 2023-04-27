@@ -1,0 +1,134 @@
+<HTML>
+<HEAD>
+  <STYLE>
+  body::-webkit-scrollbar {
+    display: none;}
+    body{
+      overflow-x: hidden;
+    } 
+        #one {
+          position: absolute;
+          top: 4%;
+          left: 24%;
+          color:  #413b34;
+          font-size: 28px;
+          font-family: Big Daily Short;
+          opacity: 1;
+          z-index: 1;
+          animation: slideIn 1s ease forwards;}
+
+       #frontpage {
+          position: absolute;
+          top: -100px;
+          left: 28%;
+          color: #413b34;
+          font-size: 105px;
+          font-family: 'Clash Display', sans-serif;
+          opacity: 0;
+          z-index: 2;
+          animation: slidetwo 1s ease forwards; 
+          animation-delay: 0.4s; 
+        }
+
+        #pic{
+          height: 60%;
+          position:relative;
+          z-index: 1;
+          left: 37.5%;
+          top: -1%;
+          opacity:0;
+          animation: slidesix 0.4s ease forwards; 
+          animation-delay: 1.9s; }
+
+
+        #two{
+          position: absolute;
+          top: 69%;
+          left: 34%;
+          color:  #413b34;
+          font-size: 28px;
+          font-family: Big Daily Short;
+          opacity: 0;
+          z-index: 1;
+          animation: slidethree 1s ease forwards; 
+          animation-delay: 0.8s;}
+
+        #violin{
+          position: relative;
+          top: 66%;
+          left: 39%;
+          color:  #413b34;
+          font-size: 105px;
+          font-family: Clash Display;
+          opacity: 0;
+          z-index: 2;
+          animation: slidethree 1s ease forwards; 
+          animation-delay: 1s; }
+
+        #three {
+          position: absolute;
+          top: 81%;
+          left: 30%;
+          color:  #413b34;
+          font-size: 28px;
+          font-family: Big Daily Short;
+          opacity: 0;
+          z-index: 1;
+          animation: slidefour 1s ease forwards; 
+          animation-delay: 1.4s;}
+        
+        #contact{
+          position: absolute;
+          top: 79%;
+          left: 34%;
+          color:  #413b34;
+          font-size: 105px;
+          font-family: Clash Display;
+          opacity: 0;
+          z-index: 2;
+          animation: slidefive 1s ease forwards; 
+          animation-delay: 1.8s;}
+
+        #close {
+          position: relative;
+          top: 3.5%;
+          left: 98%;
+          opacity: 0;
+          color: #413b34;
+          font-size: 20px;
+          font-family: Vogue;
+          letter-spacing: 2px;
+          z-index: 2;
+          position: relative;
+          animation: lastanimation 1s ease forwards; 
+          animation-delay: 3s;}
+
+          @keyframes slideIn { 0% { top: -4px; opacity: 0; } 100% { top: 4%; opacity: 1;}}
+          @keyframes slidetwo { 0% { top: -6px; opacity: 0; } 100% { top: 3%; opacity: 1;}}
+          @keyframes slidethree { 0% { top: 68%; opacity: 0; } 100% { opacity: 1;}}
+          @keyframes slidefour { 0% { left: 28%; opacity: 0; } 100% { left: 30%; opacity: 1;}}
+          @keyframes slidefive { 0% { left: 36%; opacity: 0; } 100% { left: 34%; opacity: 1;}}
+          @keyframes slidesix { 0% { opacity: 0; } 100% { opacity: 1;}}
+          @keyframes lastanimation { 0% { top: 1%; opacity: 0; } 100% { top: 2%; opacity: 1;}}
+
+
+
+  </STYLE>
+
+</HEAD>
+ <body bgcolor="#ECECE4">
+
+  <DIV id= "close"> X </DIV>
+  <DIV id= "one"> 01 </DIV>
+  <DIV id= "two"> 02 </DIV>
+  <DIV id= "three"> 03 </DIV>
+
+  <DIV id= "frontpage"> <a style="text-decoration: none; color: #413b34;" href="LeipzigFrontPage.html";> FRONT PAGE </a></DIV>
+  <DIV id= "violin"> <a style="text-decoration: none; color: #413b34;" href="LeipzigViolin.html";> VIOLIN </a></DIV>
+  <DIV id= "contact"> <a style="text-decoration: none; color: #413b34;" href="LeipzigContact.html";> CONTACT</a></DIV>
+
+  <IMG src='image/violin.jpeg' id='pic'> </IMG>
+
+
+</BODY>
+</HTML>

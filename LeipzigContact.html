@@ -1,0 +1,207 @@
+<HTML>
+<HEAD>
+  <STYLE>
+
+  body::-webkit-scrollbar {
+    display: none;}
+    body{
+      overflow-x: hidden;
+    } 
+     #menu {
+      position:absolute;
+      top: 3.5%;
+      left: 2%;
+      opacity: 0;
+      color: #484036;
+      font-size: 20px;
+      font-family: Vogue;
+      letter-spacing: 4px;
+      z-index: 2;
+      animation: lastanimation 1s ease forwards;
+      animation-delay: 1s; 
+    }
+    #bg1{
+    position: absolute;
+    top:0%;
+    Left: 0;
+    height: 100%;
+    width: 101%;
+    overflow: hidden;
+    background-color: #ACB4B8;
+    z-index: 1; }
+    
+    #bg2{
+    position: absolute;
+    top:100%;
+    Left: 0;
+    height: 35%;
+    width: 101%;
+    overflow: hidden;
+    background-color: #B5997A;
+    z-index: -1; }
+
+    #bg3{
+    position: absolute;
+    top:30%;
+    Left: 25%;
+    height: 85%;
+    width: 48%;
+    overflow: hidden;
+    background-color:#FAF5EB;
+    z-index: 4; }
+
+    #Contacts{
+    position: absolute;
+    top:140%;
+    Left: 25%;
+    height: 350%;
+    width: 48%;
+    overflow: hidden;
+    background-color:#FAF5EB;
+    z-index: 4;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start }
+
+    #footer{
+      position: absolute;
+      top: 118%;
+      left: 43%;
+      color: #F0ECE4;
+      font-size: 40px;
+      font-family: Hoelfler Text;
+      letter-spacing: 6px; 
+      font-style: italic; }
+
+     #Contactsone{
+      position: absolute;
+      top: 125%;
+      left: 39.5%;
+      color: #F0ECE4;
+      font-size: 15px;
+      font-family: ABChanel PB Regular M; }
+
+      #Contactstwo{
+      position: absolute;
+      top: 125%;
+      left: 43.5%;
+      color: #F0ECE4;
+      font-size: 15px;
+      font-family: ABChanel PB Regular M; }
+
+      #Contactsthree{
+      position: absolute;
+      top: 125%;
+      left: 52%;
+      color: #F0ECE4;
+      font-size: 15px;
+      font-family: ABChanel PB Regular M; }
+
+      #Contactsfour{
+      position: absolute;
+      top: 125%;
+      left: 56%;
+      color: #F0ECE4;
+      font-size: 15px;
+      font-family: ABChanel PB Regular M; }
+
+      #text{
+      position: absolute;
+      left: 26%;
+      color: #484036;
+      font-size: 31px;
+      font-family: Clash Display;
+      opacity: 0;
+      z-index: 10;
+      top: 32%;
+      animation: animationone 1s ease forwards; 
+      animation-delay: 0.1s; }
+     
+      #texttwo{
+      position: absolute;
+      left: 28%;
+      color: #484036;
+      font-size: 31px;
+      font-family: Clash Display;
+      opacity: 0;
+      z-index: 10;
+      top: 36%;
+      animation: animationtwo 1s ease forwards; 
+      animation-delay: 0.1s;}
+
+      #textthree{
+      position: absolute;
+      left: 45%;
+      color: #484036;
+      font-size: 31px;
+      font-family: Big Daily Short;
+      opacity: 0;
+      z-index: 10;
+      top: 70%;
+      animation: animationthree 1s ease forwards; 
+      animation-delay: 0.3s; }
+
+      #textfour{
+      position: absolute;
+      left: 43%;
+      color: #484036;
+      font-size: 31px;
+      font-family: Big Daily Short;
+      opacity: 0;
+      z-index: 10;
+      top: 74%;
+      animation: animationfour 1s ease forwards; 
+      animation-delay: 0.3s; }
+
+      #textfive{
+      position: absolute;
+      left: 25%;
+      color: #D5D5C4;
+      font-size: 50.5px;
+      font-family: ABChanel PB Regular M;
+      opacity: 0;
+      z-index: 10;
+      top: 105%;
+      transform: translateY(-20px);
+      transition: opacity 1s ease, transform 1s ease; }
+
+      @keyframes lastanimation { 0% { top: 1%; opacity: 0; } 100% { top: 3.5%; opacity: 1;}}
+      @keyframes animationone { 0% { top: 32%; opacity: 0; } 100% { top: 32%; opacity: 1;}}
+      @keyframes animationtwo { 0% { top: 36%; opacity: 0; } 100% { top: 36%; opacity: 1;}}
+      @keyframes animationthree { 0% { left: 40%; opacity: 0; } 100% { left: 45%; opacity: 1;}}
+      @keyframes animationfour { 0% { left: 48%; opacity: 0; } 100% { left: 43%; opacity: 1;}}
+         </STYLE>
+
+  <SCRIPT>
+  function checkScroll(){
+    if(window.scrollY>100){
+      document.getElementById('textfive').style.opacity=1;
+      document.getElementById('textfive').style.transform='translateY(0)';}}
+    document.addEventListener('scroll', checkScroll);
+</SCRIPT>
+
+</HEAD>
+ <body bgcolor="#B5997A">
+
+<DIV id= "menu"> <a style="text-decoration: none; color: #484036;" href="LeipzigMenu.html";> Menu </a></DIV>
+
+<DIV id='bg1'></DIV>
+<DIV id='bg2'></DIV>
+<DIV id='bg3'></DIV>
+
+<DIV id= "footer"> LEIPZIG </DIV>
+<DIV id= "Contactsone"> <a style="text-decoration: none; color: #F0ECE4;" href="LeipzigMenu.html";> Menu </a></DIV>
+  <DIV id= "Contactstwo"> <a style="text-decoration: none; color: #F0ECE4;" href="https://www.instagram.com/elysiiqnxi/";>| Instagram </a></DIV>
+  <DIV id= "Contactsthree"><a style="text-decoration: none; color: #F0ECE4;" href="https://www.google.com/search?q=cinderella+meme&tbm=isch&ved=2ahUKEwisu7vWzbP-AhXJCt4KHWYuDOgQ2-cCegQIABAA&oq=cinderella+meme&gs_lcp=CgNpbWcQAzIHCAAQigUQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABFDyB1jlG2DSHGgAcAB4AIABOIgBjgaSAQIxNpgBAKABAaoBC2d3cy13aXotaW1nsAEAwAEB&sclient=img&ei=lKQ-ZKyhLsmV-Abm3LDADg&bih=898&biw=1633&rlz=1C5CHFA_enTW1030TW1030&safe=active&ssui=on#imgrc=XWCHF-X5YrRcOM";>| Line </a></DIV>
+  <DIV id= "Contactsfour"><a style="text-decoration: none; color: #F0ECE4;" href="https://www.google.com/search?q=rapunzel+meme&tbm=isch&ved=2ahUKEwiq-bKrzrP-AhVCeN4KHaEeBhUQ2-cCegQIABAA&oq=rapunzelmeme&gs_lcp=CgNpbWcQA1AAWABgAGgAcAB4AIABAIgBAJIBAJgBAKoBC2d3cy13aXotaW1n&sclient=img&ei=RqU-ZKq-NcLw-QahvZioAQ&bih=898&biw=1633&rlz=1C5CHFA_enTW1030TW1030&safe=active&ssui=on";>| Gmail</a></DIV>
+ 
+  <DIV id= "text"> If you have any further questions or concerns </DIV>
+  <DIV id="texttwo"> about the violin that you'd like to discuss, </DIV>
+  <DIV id="textthree"> please</DIV>
+  <DIV id="textfour"> contact us</DIV>
+  <DIV id="textfive"> fiohua26@gmail.com</DIV>
+
+  
+
+</BODY>
+</HTML>
